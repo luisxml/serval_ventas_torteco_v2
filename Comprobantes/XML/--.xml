@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Corporacion Cyber Power S.A.C. / www.cyberpowerperu.com-->
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+         xmlns:ccts="urn:un:unece:uncefact:documentation:2"
+         xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+         xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+         xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ext:UBLExtensions>
+  
+  		<ext:UBLExtension>
+			<ext:ExtensionContent></ext:ExtensionContent>
+		</ext:UBLExtension>
+  </ext:UBLExtensions>
+  <cbc:UBLVersionID></cbc:UBLVersionID>
+  <cbc:CustomizationID></cbc:CustomizationID>
+  <cbc:ID></cbc:ID>
+  <cbc:IssueDate></cbc:IssueDate>
+  <cbc:IssueTime></cbc:IssueTime>  
+  
+  <cbc:InvoiceTypeCode listID=""
+                       listAgencyName="PE:SUNAT"
+                       listName="Tipo de Documento"
+                       name="Tipo de Operacion"
+                       listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo01"
+                       listSchemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo51"></cbc:InvoiceTypeCode>
+					   
+  <cbc:Note languageLocaleID=""><![CDATA[CON 00/100 ]]></cbc:Note>
+  <cbc:DocumentCurrencyCode listAgencyName="United Nations Economic Commission for Europe" listID="ISO 4217 Alpha" listName="Currency"></cbc:DocumentCurrencyCode>	
+  <cac:Signature>
+    <cbc:ID></cbc:ID>
+	<cbc:Note>Elaborado por el Sistema de Gestión SERVAL</cbc:Note>
+    <cac:SignatoryParty>
+      <cac:PartyIdentification>
+        <cbc:ID></cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cbc:Name><![CDATA[]]></cbc:Name>
+      </cac:PartyName>
+    </cac:SignatoryParty>
+    <cac:DigitalSignatureAttachment>
+      <cac:ExternalReference>
+        <cbc:URI>SIGN</cbc:URI>
+      </cac:ExternalReference>
+    </cac:DigitalSignatureAttachment>
+  </cac:Signature>
+  <cac:AccountingSupplierParty>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID schemeAgencyName="PE:SUNAT" schemeID="" schemeName="Documento de Identidad" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06"></cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cbc:Name><![CDATA[]]></cbc:Name>
+      </cac:PartyName>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName><![CDATA[]]></cbc:RegistrationName>
+        <cac:RegistrationAddress>
+         <cbc:AddressTypeCode>0000</cbc:AddressTypeCode>
+		 <cbc:CitySubdivisionName><![CDATA[]]></cbc:CitySubdivisionName>
+         <cbc:CityName><![CDATA[]]></cbc:CityName>
+         <cbc:CountrySubentity><![CDATA[]]></cbc:CountrySubentity>
+		 <cbc:CountrySubentityCode><![CDATA[]]></cbc:CountrySubentityCode>
+         <cbc:District><![CDATA[]]></cbc:District>	
+		 <cac:AddressLine>
+			<cbc:Line><![CDATA[]]></cbc:Line>
+		 </cac:AddressLine>		 
+         <cac:Country>
+          <cbc:IdentificationCode>PE</cbc:IdentificationCode>
+         </cac:Country>
+        </cac:RegistrationAddress>
+      </cac:PartyLegalEntity>
+    </cac:Party>	
+  </cac:AccountingSupplierParty>
+  <cac:AccountingCustomerParty>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID schemeID=""
+                schemeName="Documento de Identidad"
+                schemeAgencyName="PE:SUNAT"
+                schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06"></cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName><![CDATA[]]></cbc:RegistrationName>
+		<cac:RegistrationAddress>
+          <cbc:AddressTypeCode>-</cbc:AddressTypeCode>
+		  <cbc:CitySubdivisionName>-</cbc:CitySubdivisionName>
+          <cbc:CityName>-</cbc:CityName>
+          <cbc:CountrySubentity>-</cbc:CountrySubentity>
+		  <cbc:CountrySubentityCode><![CDATA[]]></cbc:CountrySubentityCode>
+          <cbc:District>-</cbc:District>
+		  <cac:AddressLine>
+			<cbc:Line><![CDATA[                                                                                                                                                                                                                                                          ]]></cbc:Line>
+		  </cac:AddressLine>	
+          <cac:Country>
+           <cbc:IdentificationCode>PE</cbc:IdentificationCode>      
+          </cac:Country>
+        </cac:RegistrationAddress>
+		</cac:PartyLegalEntity>
+    </cac:Party>		
+  </cac:AccountingCustomerParty>
+  
+  
+
+
+  <!-- Inicio Tributos cabecera-->	
+  <cac:TaxTotal>
+    <cbc:TaxAmount currencyID="">0.00</cbc:TaxAmount>  
+       </cac:TaxTotal>	
+   <!-- Fin Tributos  Cabecera--> 
+ <cac:LegalMonetaryTotal>
+    <cbc:LineExtensionAmount currencyID="">0.00</cbc:LineExtensionAmount>	
+	<cbc:TaxInclusiveAmount currencyID="">0.00</cbc:TaxInclusiveAmount>
+    <cbc:AllowanceTotalAmount currencyID="">0</cbc:AllowanceTotalAmount>
+	<cbc:ChargeTotalAmount currencyID="">0</cbc:ChargeTotalAmount>	
+	<cbc:PrepaidAmount currencyID="">0.00</cbc:PrepaidAmount>	
+	<cbc:PayableAmount currencyID="">0.00</cbc:PayableAmount>  
+  </cac:LegalMonetaryTotal> 
+  </Invoice>
+<!--Corporacion Cyber Power S.A.C. / www.cyberpowerperu.com-->
