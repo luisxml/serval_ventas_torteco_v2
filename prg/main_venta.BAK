@@ -2,36 +2,37 @@ _SCREEN.VISIBLE = .F.
 _SCREEN.BorderStyle= 3
 application.Visible = .F.
 
-DECLARE INTEGER FindWindow IN WIN32API AS WAPIFWindow STRING @,STRING @
-_aclass=NULL
-_aname= [Inicio de Sesión - SERVAL]
-_XAppwhd=WAPIFWindow( @_aclass, @_aname )
-CLEAR DLLS
-IF _XAppwhd!=0
-	SET PROCEDURE TO
-	SET LIBRARY TO
-	MESSAGEBOX( [Disculpe, el sistema ya está abierto.], 16, [Mensaje del Sistema] )
-	CLOSE ALL
-	CLEAR event
-	CLOSE DATABASES
-	RETURN
-ENDIF
+*!*	DECLARE INTEGER FindWindow IN WIN32API AS WAPIFWindow STRING @,STRING @
+*!*	_aclass=NULL
+*!*	_aname= [Inicio de Sesión - SERVAL]
+*!*	_XAppwhd=WAPIFWindow( @_aclass, @_aname )
+*!*	CLEAR DLLS
+*!*	IF _XAppwhd!=0
+*!*		SET PROCEDURE TO
+*!*		SET LIBRARY TO
+*!*		MESSAGEBOX( [Disculpe, el sistema ya está abierto.], 16, [Mensaje del Sistema] )
+*!*		CLOSE ALL
+*!*		CLEAR event
+*!*		CLOSE DATABASES
+*!*		RETURN
+*!*	ENDIF
 
-DECLARE INTEGER FindWindow IN WIN32API AS WAPIFWindow STRING @,STRING @
-_aclass=NULL
-_aname= [SERVAL - .:SISTEMA DE GESTION.:]
-_XAppwhd=WAPIFWindow( @_aclass, @_aname )
-CLEAR DLLS
-IF _XAppwhd!=0
-	SET PROCEDURE TO
-	SET LIBRARY TO
-	MESSAGEBOX( [Disculpe, el sistema ya está abierto.], 16, [Mensaje del Sistema] )
-	CLOSE ALL
-	CLEAR event
-	CLOSE DATABASES
-	RETURN
-ENDIF
-RELEASE _aclass
+*!*	DECLARE INTEGER FindWindow IN WIN32API AS WAPIFWindow STRING @,STRING @
+*!*	_aclass=NULL
+*!*	_aname= [SERVAL - .:SISTEMA DE GESTION.:]
+*!*	_XAppwhd=WAPIFWindow( @_aclass, @_aname )
+*!*	CLEAR DLLS
+*!*	IF _XAppwhd!=0
+*!*		SET PROCEDURE TO
+*!*		SET LIBRARY TO
+*!*		MESSAGEBOX( [Disculpe, el sistema ya está abierto.], 16, [Mensaje del Sistema] )
+*!*		CLOSE ALL
+*!*		CLEAR event
+*!*		CLOSE DATABASES
+*!*		RETURN
+*!*	ENDIF
+*!*	RELEASE _aclass
+
 *!*	*/////////////////////////////////////////////////////////////////////////////////
 *!*	*// CHEQUEO DE EXCLUSIVIDAD DE INSTANCIA!!
 *!*	*/////////////////////////////////////////////////////////////////////////////////
@@ -126,8 +127,8 @@ VGC_LLAVE =''
 *---------------------
 
 *****VERSION
-Vgc_version='2.1.2'
-Vgc_vigencia='11/09/2020'
+Vgc_version='2.1.4'
+Vgc_vigencia='07/10/2020'
 ***VERSION
 SET STEP ON
 Local cnControladorArch,nTamaño,cCadena

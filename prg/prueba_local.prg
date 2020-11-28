@@ -77,7 +77,7 @@ Vgc_cliente2=""
 lcAppDir = upper(ADDBS(SYS(5) + SYS(2003)))
 SET DEFAULT TO FULLPATH(lcAppDir)
 *OPEN DATABASE FULLPATH(lcAppDir+"data\SERVAL.dbc")
-Vgc_almatrab=1
+Vgc_almatrab=3
 *Vgc_usuario="17823288"
 Vgc_usuario="12345678"
 Vgc_clic =0

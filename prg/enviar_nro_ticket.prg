@@ -80,7 +80,7 @@ ENDIF
     Vlc_faultstring= STREXTRACT(oxmlhttp.responsetext, "<content>", "</content>")
     Vlc_message= STREXTRACT(oxmlhttp.responsetext, "<message>", "</message>")
     
-    IF Vlc_faultcode = '0' &&AND EMPTY(Vlc_faultstring) AND EMPTY(Vlc_message) THEN
+    IF Vlc_faultcode = '0' OR EMPTY(Vlc_faultcode) &&AND EMPTY(Vlc_faultstring) AND EMPTY(Vlc_message) THEN
 	    DELETE FILE ALLTRIM(ruta_cdr_local+"R-"+_nombrearchivose+".zip")
 	    STRTOFILE(STRCONV(ccontenidorptazip, 14), ruta_cdr_local+"R-"+_nombrearchivose+".zip")
 	    

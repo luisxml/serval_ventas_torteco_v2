@@ -1,1 +1,5 @@
-torteco.dynns.com$SERVAL_CYBER$4
+torteco.dynns.com$SERVAL_CYBER$1
+
+
+190.117.161.30
+torteco.dynns.com
